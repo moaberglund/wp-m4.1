@@ -174,10 +174,22 @@ header > div {
     text-transform: uppercase;
     text-align: center;
     margin: 0 5px;
-    padding: 2em 0;
+    padding: 2em 0 0 0;
     font-size: 3em;
     font-weight: 400;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.7);
+
 }
+ .hero h2 {
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 5px;
+    padding: 0 0 2em 0;
+    font-size: 2em;
+    font-weight: 400;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.7);
+ }
 
 .main {
     max-width: 900px;
