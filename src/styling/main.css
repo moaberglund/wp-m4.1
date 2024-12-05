@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Urbanist", sans-serif;
+}
+#video-bg {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#banner {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column; /* Vertikalt layout för rader */
+    align-items: center; 
+    width: 100%;
+}
+
+header > div {
+    display: flex;
+    justify-content: space-between; /* Jämn fördelning mellan element */
+    align-items: center; 
+    width: 100%; 
+    padding: 10px; 
+}
+
+.header-1, .header-2, .header-3 {
+    flex: 1; /* Gör så att varje div tar lika mycket plats */
+    text-align: center; /* Centrerar text och innehåll horisontellt */
+}
+
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+#drop-nav nav {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #2d2a26;
+    width: 30vw;
+    max-width: 400px;
+    height: 100vh;
+    transition: transform .5s ease-in-out, opacity .5s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: -30px;
+    transform: translateX(-100%);
+}
+
+#drop-nav nav.open {
+    visibility: visible;
+    opacity: 1;
+    position: fixed;
+    transform: translateX(0);
+}
+
+#drop-nav nav ul {
+    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    top: 7em;
+}
+
+#drop-nav nav li {
+    width: 100%;
+    padding: 1em 1em 1em 3em;
+}
+
+#drop-nav nav a {
+    color: #ebe1d3;
+    letter-spacing: 2px;
+    padding: 0 0 0 .5em;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 2em;
+    text-decoration: none;
+}
+
+#drop-nav nav a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#drop-nav .menu-btn {
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    align-items: center;
+    max-width: 400px;
+    display: flex;
+    position: absolute;
+    top: 2.5em;
+    left: 3em;
+}
+
+#drop-nav .menu-btn:hover {
+    cursor: pointer;
+}
+
+#drop-nav .open {
+    position: absolute;
+}
+
+#drop-nav .close {
+    color: #ebe1d3;
+    background-color: #2d2a26;
+    font-size: 1.3em;
+    position: absolute;
+    top: 1.8em;
+    left: 3.5em;
+}
+
+#drop-nav .close:hover {
+    color: #ebe1d0;
+}
+
+.header-2 img {
+    width: 80px;
+    margin: 0 auto;
+    display: block;
+}
+
+#desktop-navigation {
+    background-color: white;
+    display: flex;
+    justify-content: center; 
+    margin-top: 10px; 
+    width: 100%; 
+    padding: .5em;
+}
+
+#desktop-navigation ul {
+    text-align: center;
+    padding: 1em 0;
+    position: static;
+}
+
+#desktop-navigation li {
+    padding: 1em;
+    display: inline;
+}
+
+#desktop-navigation a {
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+#desktop-navigation a:hover {
+    cursor: pointer;
+    color: #4b3a29;
+    text-decoration: underline;
+}
+.hero {
+    background-color: transparent;
+}
+
+.hero h1 {
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 5px;
+    padding: 2em 0;
+    font-size: 3em;
+    font-weight: 400;
+}
+
+.main {
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.4em;
+}
+
+.main h2 {
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.main p {
+    letter-spacing: .5px;
+    margin: .7em 0;
+}
+
+footer {
+    background-color: #e7e7e7;
+    margin-top: 2em;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+@media screen and (width <=920px) {
+    #drop-nav nav {
+        width: 100vw;
+        max-width: 250px;
+    }
+
+    header {
+        grid-template-columns: 1fr auto;
+    }
+
+    .header-1 {
+        grid-column: 1 / 2;
+    }
+
+    .header-2 {
+        grid-column: 2 / 3;
+    }
+
+    .header-2 img {
+        margin-right: 3em;
+    }
+
+    .header-3 {
+        display: none;
+    }
+
+    .main {
+        margin: 1em;
+    }
+
+    #header-img h1 {
+        padding-top: 1.2em;
+        font-size: 2em;
+    }
+}
