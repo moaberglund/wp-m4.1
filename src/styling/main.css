@@ -235,10 +235,10 @@ header>div {
 }
 
 footer {
-    background-color: #e7e7e7;
-    margin-top: 2em;
-    padding-top: 2em;
-    padding-bottom: 1em;
+    max-width: 900px;
+    text-align: right;
+    margin: 0 auto;
+    padding: 0.5em 1em;
 }
 
 @media screen and (width <=920px) {
