@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullstack M1</title>
+    <!-- js -->
+    <script type="module" src="../js/nav.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="../styling/main.css">
+    <!-- google icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <!-- font awesonme -->
+    <script src="https://kit.fontawesome.com/9543e08d94.js" crossorigin="anonymous"></script>
+    <!-- favicon -->
+    <link rel="icon" href="../media/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- video background -->
+    <div>
+        <video autoplay muted loop playsinline id="video-bg" poster="../media/snowy-mountains.png"
+            aria-label="Aerial view ofer snowy mountains">
+            <source src="../media/snowy-mountains.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <header>
+
+        <div id="banner">
+            <!-- burgar meny -->
+            <div id="drop-nav" class="header-1">
+
+                <button class="menu-btn open" id="open-menu"><span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </button>
+                <nav id="burger-nav">
+                    <button class="menu-btn close" id="close-menu"><i class="fa-solid fa-x"></i>
+                    </button>
+                    <ul>
+                        <li><a href="../index.html">Hem</a></li>
+                        <li><a href="about.html">Om oss</a></li>
+                        <li><a href="">Produkter</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <div class="header-2">
+
+                <!-- a tagg med ikon -->
+                <a href="../index.html">
+                    <!-- placeholder - BYT UT -->
+                    <img src="../media/icon-mountain.png" alt="Logotyp">
+                </a>
+
+            </div>
+
+            <div class="header-3">
+                <!-- om man vill ha nåt i högra hörnet? -->
+
+
+            </div>
+        </div>
+
+
+        <section class="hero">
+            <h1>Skyline adventures</h1>
+            <h2>Above or below</h2>
+        </section>
+
+
+        <nav id="desktop-navigation">
+            <ul>
+                <li><a href="../index.html">Hem</a></li>
+                <li><a href="about.html">Om oss</a></li>
+                <li><a href="">Produkter</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="wrapper">
+            <h3>Om oss - Möt vårt team</h3>
+
+            <div class="staff">
+                <div class="staff-bubble">
+                    <picture class="staff-img">
+                        <source srcset="../media/ella-magnusson.jpg?as=avif&width=200" type="image/avif">
+                        <source srcset="../media/ella-magnusson.jpg?as=webp&width=200" type="image/webp">
+                        <source srcset="../media/ella-magnusson.jpg?width=200" type="image/jpg">
+                        <img src="../media/ella-magnusson.jpg?width=200" alt="VD Ella Magnusson">
+                    </picture>
+
+                    <h4>Ella Magnusson</h4>
+                    <h5>Grundare & Äventyrsguide</h5>
+                    <p>Ella är företagets hjärta och grundare. Hon har rest världen runt för att utforska nya äventyr
+                        och
+                        har 15 års erfarenhet av att leda expeditioner. Med en bakgrund inom ekoturism och en passion
+                        för
+                        bergsklättring är hon expert på att skapa säkra och inspirerande resor.
+                    </p>
+
+                </div>
+
+                <div class="staff-bubble">
+                    <picture class="staff-img">
+                        <source srcset="../media/lukas-muller.jpg?as=avif&width=200" type="image/avif">
+                        <source srcset="../media/lukas-muller.jpg?as=webp&width=200" type="image/webp">
+                        <source srcset="../media/lukas-muller.jpg?width=200" type="image/jpg">
+                        <img src="../media/lukas-muller.jpg?width=200" alt="Bergsguide Lukas Müller">
+                    </picture>
+
+                    <h4>Lukas Müller </h4>
+                    <h5>Vandringsexpert Alpinistguide</h5>
+                    <p>Lukas är vår tyska specialist på vandring och alpinsim. Med rötterna i de bayerska Alperna har
+                        han en
+                        djup koppling till bergen och naturen. Lukas är en erfaren friluftsguide och utbildad inom
+                        alpinsäkerhet. Han är känd för sitt lugn och sin entusiasm, och han älskar att kombinera
+                        krävande
+                        bergsvandringar med uppfriskande dopp i glaciärsjöar. Hans filosofi är att varje steg i naturen
+                        är
+                        en möjlighet att upptäcka sig själv - och Lukas är med dig hela vägen.
+                    </p>
+                </div>
+
+                <div class="staff-bubble">
+                    <picture class="staff-img">
+                        <source srcset="../media/olle-ronnhed.jpg?as=avif&width=200" type="image/avif">
+                        <source srcset="../media/olle-ronnhed.jpg?as=webp&width=200" type="image/webp">
+                        <source srcset="../media/olle-ronnhed.jpg?width=200" type="image/jpg">
+                        <img src="../media/olle-ronnhed.jpg?width=200" alt="Dykguide Olle Rönnhed">
+                    </picture>
+
+                    <h4>Olle "Orca" Rönnhed</h4>
+                    <h5>Dykexpert & Havsguide</h5>
+                    <p>Olle är marinbiolog och PADI certifierad dykmästare. Hans smeknamn "Orca" kommer från hans kärlek
+                        till
+                        havets stora djur, särskilt späckhuggare. Han leder alla våra undervattensäventyr och är lika
+                        skicklig
+                        på att berätta om havets mysterier som att guida säkra dyk.
+                    </p>
+
+                </div>
+
+                <div class="staff-bubble">
+                    <picture class="staff-img">
+                        <source srcset="../media/luna-rossa.jpg?as=avif&width=200" type="image/avif">
+                        <source srcset="../media/luna-rossa.jpg?as=webp&width=200" type="image/webp">
+                        <source srcset="../media/luna-rossa.jpg?width=200" type="image/jpg">
+                        <img src="../media/luna-rossa.jpg?width=200" alt="Paraglideguide Luna Rossa">
+                    </picture>
+
+                    <h4>Luna Rossa</h4>
+                    <h5>Paraglidinginstruktör & Adrenalinexpert</h5>
+                    <p>Luna är vår äventyrliga paraglideguru. Med över 500 flygtimmar och ett smittande lugn hjälper hon
+                        både nybörjare och erfarna flygare att känna sig trygga i luften. Hennes motto är "högt, fritt
+                        och
+                        säkert", och hennes energi inspirerar alla som vågar ge sig ut i det blå.
+                    </p>
+
+                </div>
+
+                <div class="staff-bubble">
+                    <picture class="staff-img">
+                        <source srcset="../media/mario-torres.jpg?as=avif&width=200" type="image/avif">
+                        <source srcset="../media/mario-torres.jpg?as=webp&width=200" type="image/webp">
+                        <source srcset="../media/mario-torres.jpg?width=200" type="image/jpg">
+                        <img src="../media/mario-torres.jpg?width=200" alt="Kundansvarig Mario Torres">
+                    </picture>
+
+                    <h4>Mario Torres</h4>
+                    <h5>Kundansvarig & Logistikspecialist</h5>
+                    <p>Mario är den som ser till att alla detaljer klaffar inför våra resor. Han har en bakgrund inom
+                        eventplanering och är en mästare på att skapa smidiga reseupplevelser. När han inte planerar
+                        nästa
+                        stora äventyr älskar han att vandra och upptäcka dolda pärlor i naturen.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+    </main>
+
+    <footer>
+        <div>
+            <p>&copy; Moa Berglund 2024</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

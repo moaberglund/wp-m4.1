@@ -220,6 +220,20 @@ header>div {
 
 }
 
+.staff {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.staff-bubble {
+    max-width: 300px;
+}
+
+.staff-img img {
+    border-radius: 15px;
+}
+
 footer {
     background-color: #e7e7e7;
     margin-top: 2em;
