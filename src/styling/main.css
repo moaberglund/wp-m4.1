@@ -283,9 +283,7 @@ footer {
 .slideshow-container {
     max-width: 900px;
     position: relative;
-    margin: auto;
-    margin-top: 1em;
-
+    margin: 0 auto;
 }
 
 /* Hide the images by default */
@@ -381,6 +379,14 @@ footer {
     }
 }
 
+.trip-img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 3em 0 1em 0;
+}
+
 
 /* Specifik resa sida */
 
@@ -388,6 +394,7 @@ footer {
     padding: 0 16px 40px 16px;
     list-style-type: none;
 }
+
 .breadcrumbs ul li {
     display: inline;
     font-size: 12px;
@@ -397,7 +404,7 @@ footer {
 }
 
 /* Lägg till en > symbol mellan varje item */
-.breadcrumbs ul li+ li:before {
+.breadcrumbs ul li+li:before {
     content: "/";
     padding: 0 10px;
 }
