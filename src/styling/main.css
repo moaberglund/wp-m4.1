@@ -223,11 +223,14 @@ header>div {
 .staff {
     display: flex;
     flex-direction: row;
-
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .staff-bubble {
-    max-width: 300px;
+    width: 380px;
 }
 
 .staff-img img {
