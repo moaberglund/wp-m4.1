@@ -363,6 +363,11 @@ footer {
     animation-duration: 1.5s;
 }
 
+/* Ta bort stil på länk area för resa*/
+.trip-link {
+    text-decoration: none;
+    color: #000;
+}
 @keyframes fade {
     from {
         opacity: .4
