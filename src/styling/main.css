@@ -368,6 +368,7 @@ footer {
     text-decoration: none;
     color: #000;
 }
+
 @keyframes fade {
     from {
         opacity: .4
@@ -376,6 +377,41 @@ footer {
     to {
         opacity: 1
     }
+}
+
+
+/* Specifik resa sida */
+
+.trip p {
+    padding: 5px 0;
+}
+
+.trip ul {
+    list-style-type: nones;
+}
+
+.trip ul li {
+    padding: 5px 0 0 0;
+    text-decoration: none;
+}
+
+.trip form {
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.trip form input {
+    padding: 0.5em;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.trip form select {
+    padding: 0.5em;
+    border: 1px solid #000;
+    border-radius: 5px;
 }
 
 @media screen and (width <=920px) {
