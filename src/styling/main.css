@@ -86,6 +86,7 @@ header>div {
     top: 0;
     left: -30px;
     transform: translateX(-100%);
+    z-index: 1;
 }
 
 #drop-nav nav.open {
@@ -232,7 +233,7 @@ header>div {
     max-width: 900px;
     margin: 0 auto;
     line-height: 1.4em;
-    padding: 1.5em;
+    padding: 0 1.5em 1.5em 1.5em;
     border-radius: 0 0 20px 20px;
 }
 
@@ -383,12 +384,43 @@ footer {
 
 /* Specifik resa sida */
 
+.breadcrumbs ul {
+    padding: 0 16px 40px 16px;
+    list-style-type: none;
+}
+.breadcrumbs ul li {
+    display: inline;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Lägg till en > symbol mellan varje item */
+.breadcrumbs ul li+ li:before {
+    content: "/";
+    padding: 0 10px;
+}
+
+.breadcrumbs ul li a {
+    text-decoration: none;
+    color: #020727;
+}
+
+.breadcrumbs ul li a:hover {
+    text-decoration: underline;
+}
+
+.trip h4 {
+    padding-top: 10px;
+}
+
 .trip p {
     padding: 5px 0;
 }
 
 .trip ul {
-    list-style-type: nones;
+    list-style-type: none;
 }
 
 .trip ul li {
