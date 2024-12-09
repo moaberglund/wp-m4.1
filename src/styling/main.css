@@ -247,6 +247,55 @@ header>div {
 
 }
 
+/* STARTSIDA */
+
+.solid {
+    margin: 1em 1em 0 0;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.news-title {
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.news-date {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #4b3a29;
+    padding-bottom: 1em;
+
+}
+
+.news-img {
+    /* Bild tar upp 40% av utrymmet */
+    flex: 1 1 50%;
+    max-width: 400px;
+}
+
+.news-img img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.news-text {
+    /* Texten tar upp resterande utrymme */
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+}
+
+
+
+
+/* PERSONAL SIDA*/
 .staff {
     display: flex;
     flex-direction: row;
