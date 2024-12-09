@@ -541,7 +541,14 @@ footer {
     background-color: #577093;
 }
 
-@media screen and (width <=920px) {
+@media screen and (max-width: 920px) {
+
+
+    #banner {
+        position: sticky !important;
+        top: 0 !important;
+    }
+
     #drop-nav nav {
         width: 100vw;
         max-width: 300px;
@@ -568,12 +575,12 @@ footer {
         padding-bottom: 0.5em;
     }
 
-    
-h3 {
-    font-size: 28px;
-    margin: 0 0 1em 0;
-    line-height: 1.2em;
-}
+
+    h3 {
+        font-size: 28px;
+        margin: 0 0 1em 0;
+        line-height: 1.2em;
+    }
 
 
 }
